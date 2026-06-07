@@ -39,13 +39,19 @@ namespace Proj_OrionBeacon
             app.UseSwagger();
             app.UseSwaggerUI();
 
-            if (!app.Environment.IsDevelopment())
+           
+            if (app.Environment.IsDevelopment())
             {
-                app.UseExceptionHandler("/Error");
-                app.UseHsts();
+                app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //            if (!app.Environment.IsDevelopment())
+            //            {
+            //                app.UseExceptionHandler("/Error");
+            //                app.UseHsts();
+            //            }
+
+            //app.UseHttpsRedirection();
             app.UseRouting();
             app.UseCors("MobileApp");
             app.UseAuthorization();
