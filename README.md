@@ -2,6 +2,9 @@
 
 API REST desenvolvida em **ASP.NET Core (.NET 10)** com padrão **MVC**, para gerenciamento de missões espaciais, análises de áreas celestes e leituras de sensores. Utiliza **Oracle Database** via Entity Framework Core e expõe documentação interativa via **Swagger**.
 
+🔗 **Deploy:** [api-mvc-orionbeacongs.onrender.com](https://api-mvc-orionbeacongs.onrender.com)  
+📖 **Swagger:** [api-mvc-orionbeacongs.onrender.com/swagger](https://api-mvc-orionbeacongs.onrender.com/swagger)
+
 ---
 
 ## 🚀 Tecnologias
@@ -45,6 +48,7 @@ Proj_OrionBeacon/
 ├── Views/                      # Views Razor (interface web)
 │   └── AreasEspaciais/
 ├── wwwroot/                    # Arquivos estáticos
+├── Dockerfile
 ├── appsettings.json
 └── Program.cs
 ```
@@ -86,11 +90,11 @@ Todos os endpoints seguem o padrão RESTful com CRUD completo:
 | GET | `/api/logsanalise` | Lista logs de análise |
 | GET | `/api/nosqlareasjson` | Lista documentos JSON (NoSQL) |
 
-> Acesse `/swagger` para a documentação interativa completa.
+> Acesse o [Swagger](https://api-mvc-orionbeacongs.onrender.com/swagger) para a documentação interativa completa.
 
 ---
 
-## ⚙️ Configuração
+## ⚙️ Configuração Local
 
 ### Pré-requisitos
 
@@ -109,42 +113,35 @@ Configure o arquivo `appsettings.json`:
 }
 ```
 
----
-
-## ▶️ Como Executar
+### Executar localmente
 
 ```bash
-# Clone o repositório
 git clone https://github.com/EnzoXc07/API_MVC_ORIONBEACONGS.git
 cd API_MVC_ORIONBEACONGS
-
-# Restaure as dependências
 dotnet restore
-
-# Aplique as migrações
 dotnet ef database update
-
-# Execute a aplicação
 dotnet run
 ```
 
-Acesse em: `https://localhost:{porta}`
-
 ---
 
-## 📖 Swagger (Documentação Interativa)
+## 🐳 Deploy com Docker (Render)
 
-Disponível em ambiente de desenvolvimento:
+O projeto inclui um `Dockerfile` pronto para deploy no [Render](https://render.com).
 
-```
-https://localhost:{porta}/swagger
-```
+### Variável de ambiente necessária no Render
 
----
+| Key | Value |
+|---|---|
+| `ConnectionStrings__OracleConnection` | `User Id=...;Password=...;Data Source=...` |
 
-## 🌐 CORS
+### Passos
 
-Política `MobileApp` configurada para aceitar qualquer origem, método e cabeçalho — pronta para integração com apps mobile ou frontends separados.
+1. Suba o projeto no GitHub
+2. No Render: **New → Web Service → Connect GitHub repo**
+3. Em **Runtime**, selecione **Docker**
+4. Adicione a variável de ambiente da connection string
+5. Deploy 🚀
 
 ---
 
