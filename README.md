@@ -151,7 +151,11 @@ Política `MobileApp` configurada para aceitar qualquer origem, método e cabeç
 ## 👤 Autor
 
 **EnzoXc07** — [GitHub](https://github.com/EnzoXc07)
+
 **Permagnani** [GitHub](https://github.com/Permagnani)
+
 **juliamenezesf** [GitHub](https://github.com/juliamenezesf)
+
 **MatheusGianolli**[GitHub](https://github.com/MatheusGianolli)
+
 **larimagalh**[GitHub](https://github.com/larimagalh)
