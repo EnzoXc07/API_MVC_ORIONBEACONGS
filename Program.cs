@@ -34,12 +34,10 @@ namespace Proj_OrionBeacon
 
             var app = builder.Build();
 
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
-            else
+            app.UseSwagger();
+            app.UseSwaggerUI();
+
+            if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Error");
                 app.UseHsts();
