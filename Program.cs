@@ -17,8 +17,10 @@ namespace Proj_OrionBeacon
                 });
             builder.Services.AddRazorPages();
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
-
+            builder.Services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new() { Title = "Orion Beacon API", Version = "v1" });
+            });
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("MobileApp", policy =>
