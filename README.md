@@ -125,26 +125,6 @@ dotnet run
 
 ---
 
-## 🐳 Deploy com Docker (Render)
-
-O projeto inclui um `Dockerfile` pronto para deploy no [Render](https://render.com).
-
-### Variável de ambiente necessária no Render
-
-| Key | Value |
-|---|---|
-| `ConnectionStrings__OracleConnection` | `User Id=...;Password=...;Data Source=...` |
-
-### Passos
-
-1. Suba o projeto no GitHub
-2. No Render: **New → Web Service → Connect GitHub repo**
-3. Em **Runtime**, selecione **Docker**
-4. Adicione a variável de ambiente da connection string
-5. Deploy 🚀
-
----
-
 ## 👤 Autor
 
 **EnzoXc07** — [GitHub](https://github.com/EnzoXc07)
