@@ -1,4 +1,4 @@
-# 🛰️ Orion Beacon — API MVC
+#  Orion Beacon — API MVC
 
 API REST desenvolvida em **ASP.NET Core (.NET 10)** com padrão **MVC**, para gerenciamento de missões espaciais, análises de áreas celestes e leituras de sensores. Utiliza **Oracle Database** via Entity Framework Core e expõe documentação interativa via **Swagger**.
 
@@ -7,7 +7,7 @@ API REST desenvolvida em **ASP.NET Core (.NET 10)** com padrão **MVC**, para ge
 
 ---
 
-## 🚀 Tecnologias
+##  Tecnologias
 
 | Tecnologia | Versão |
 |---|---|
@@ -19,7 +19,7 @@ API REST desenvolvida em **ASP.NET Core (.NET 10)** com padrão **MVC**, para ge
 
 ---
 
-## 📁 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```
 Proj_OrionBeacon/
@@ -55,7 +55,7 @@ Proj_OrionBeacon/
 
 ---
 
-## 🗃️ Modelo de Dados
+##  Modelo de Dados
 
 | Tabela Oracle | Descrição |
 |---|---|
@@ -70,7 +70,7 @@ Proj_OrionBeacon/
 
 ---
 
-## 🌐 Endpoints da API
+##  Endpoints da API
 
 Todos os endpoints seguem o padrão RESTful com CRUD completo:
 
@@ -94,7 +94,7 @@ Todos os endpoints seguem o padrão RESTful com CRUD completo:
 
 ---
 
-## ⚙️ Configuração Local
+##  Configuração Local
 
 ### Pré-requisitos
 
@@ -125,29 +125,9 @@ dotnet run
 
 ---
 
-## 🐳 Deploy com Docker (Render)
+## 👤 Autors
 
-O projeto inclui um `Dockerfile` pronto para deploy no [Render](https://render.com).
-
-### Variável de ambiente necessária no Render
-
-| Key | Value |
-|---|---|
-| `ConnectionStrings__OracleConnection` | `User Id=...;Password=...;Data Source=...` |
-
-### Passos
-
-1. Suba o projeto no GitHub
-2. No Render: **New → Web Service → Connect GitHub repo**
-3. Em **Runtime**, selecione **Docker**
-4. Adicione a variável de ambiente da connection string
-5. Deploy 🚀
-
----
-
-## 👤 Autor
-
-**EnzoXc07** — [GitHub](https://github.com/EnzoXc07)
+**EnzoXc07** — [GitHub](https://github.com/EnzoXc07)  -RM:563379
 
 **Permagnani** [GitHub](https://github.com/Permagnani)
 
