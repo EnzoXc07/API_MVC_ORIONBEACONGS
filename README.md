@@ -164,10 +164,10 @@ Validação correta quando `classificacaoFinal` é enviado como string vazia.
 
 **EnzoXc07** — [GitHub](https://github.com/EnzoXc07)  -RM:563379
 
-**Permagnani** [GitHub](https://github.com/Permagnani)
+**Permagnani** [GitHub](https://github.com/Permagnani) -RM:564996
 
-**juliamenezesf** [GitHub](https://github.com/juliamenezesf)
+**juliamenezesf** [GitHub](https://github.com/juliamenezesf) -RM:565568
 
-**MatheusGianolli**[GitHub](https://github.com/MatheusGianolli)
+**MatheusGianolli**[GitHub](https://github.com/MatheusGianolli) -RM:565258
 
-**larimagalh**[GitHub](https://github.com/larimagalh)
+**larimagalh**[GitHub](https://github.com/larimagalh) -RM: 566457
