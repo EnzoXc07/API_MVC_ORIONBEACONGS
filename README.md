@@ -3,7 +3,7 @@
 API REST desenvolvida em **ASP.NET Core (.NET 10)** com padrão **MVC**, para gerenciamento de missões espaciais, análises de áreas celestes e leituras de sensores. Utiliza **Oracle Database** via Entity Framework Core e expõe documentação interativa via **Swagger**.
 
 🔗 **Deploy:** [api-mvc-orionbeacongs.onrender.com](https://api-mvc-orionbeacongs.onrender.com)  
-📖 **Swagger:** [api-mvc-orionbeacongs.onrender.com/swagger](https://api-mvc-orionbeacongs.onrender.com/swagger)
+📖 **Swagger:** [api-mvc-orionbeacongs.onrender.com/swagger](https://api-mvc-orionbeacongs.onrender.com/swagger/index.html)
 
 ---
 
