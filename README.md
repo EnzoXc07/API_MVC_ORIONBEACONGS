@@ -122,6 +122,41 @@ dotnet restore
 dotnet ef database update
 dotnet run
 ```
+## 🧪 Testes da API
+
+Os testes foram realizados via **Postman** utilizando a collection importada do OpenAPI Spec (`/swagger/v1/swagger.json`).
+
+### GET /api/Analises — 200 OK
+
+Listagem completa das análises com dados aninhados de área, corpo celeste e leituras de sensor.
+
+![GET Analises](Docs/Capturadetela2026-06-08192203.png)
+
+---
+
+### POST /api/Analises — 201 Created
+
+Criação bem-sucedida de uma análise enviando apenas os campos necessários (sem objetos aninhados).
+
+**Body enviado:**
+```json
+{
+  "idArea": 1,
+  "classificacaoFinal": "APROVADA",
+  "dataAnalise": "2026-06-08T00:00:00",
+  "resultado": "Área aprovada para missão"
+}
+```
+
+![POST Analises 201](Docs/Capturadetela2026-06-08192707.png)
+
+---
+
+### POST /api/Analises — 400 Bad Request (campo vazio)
+
+Validação correta quando `classificacaoFinal` é enviado como string vazia.
+
+![POST Analises campo vazio](Docs/Capturadetela2026-06-08192719.png)
 
 ---
 
